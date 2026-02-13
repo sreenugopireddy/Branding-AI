@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Branding Assistant</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="app">
+
+<h1>🚀 AI Branding Assistant</h1>
+<p class="subtitle">Build names, content, colors & brand ideas instantly</p>
+
+<div class="grid">
+
+<!-- LEFT SIDE -->
+<div class="card">
+
+<h3>Brand Name Generator</h3>
+
+<input id="idea" placeholder="Describe your business idea">
+
+<select id="tone">
+<option>modern</option>
+<option>luxury</option>
+<option>playful</option>
+<option>professional</option>
+<option>bold</option>
+</select>
+
+<button onclick="brand()">Generate Brand Names</button>
+
+<hr>
+
+<h3>Marketing Content</h3>
+<textarea id="desc" placeholder="Describe your product or service"></textarea>
+<button onclick="content()">Generate Content</button>
+
+<hr>
+
+<h3>Color Palette</h3>
+<input id="industry" placeholder="Industry type">
+<button onclick="colors()">Get Colors</button>
+
+</div>
+
+
+<!-- RIGHT SIDE -->
+<div class="card">
+
+<h3>✨ Assistant Output</h3>
+
+<div id="out" class="output">
+Results will appear here…
+</div>
+
+<button class="ghost" onclick="copyOut()">Copy Result</button>
+
+<hr>
+
+<h3>Ask Your Assistant</h3>
+<input id="msg" placeholder="Ask branding question">
+<button onclick="chat()">Ask Assistant</button>
+
+</div>
+
+</div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
